@@ -1,0 +1,1 @@
+alert(`DISCLAIMER! There is a quote from Jason Statham. Press OK, if you are ready.`)
