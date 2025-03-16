@@ -416,7 +416,6 @@ z-index: 2;
 .short__img{
     border-radius: 20px;
     max-width: 603px;
-    width: 100%;
 }
 .short__button {
     position: absolute;
@@ -728,6 +727,9 @@ color:var(--title-text);
     .short__advantages{
         grid-template-columns: repeat(1,auto);
         grid-template-rows: repeat(4, auto);
+    } 
+    .short__img{
+        width: 100%;
     }   
     .short__button{
         bottom: 0;
