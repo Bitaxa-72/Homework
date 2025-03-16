@@ -61,6 +61,7 @@
 
 
 .modal {
+    padding: 0 10px;
     position: fixed;
     inset: 0;
     z-index: 10;
@@ -734,5 +735,28 @@ color:var(--title-text);
         max-width: none;
         max-height: 130px;
 
+    }
+    @media (max-width: 400px){
+        .modal__window{
+            max-width: 310px;
+            padding: 0px 10px 71px;
+        }
+        .modal__img {
+            
+            margin-bottom: -10px;
+            margin-top: -100px;
+        }
+        .modal__title{
+            font-size: 32px;
+            text-align: center;
+        }
+        .modal__text{
+            text-align: center;
+        }
+        .modal__cancel {
+            position: absolute;
+            top: 42px;
+            right: 20px;
+        }
     }
 }
