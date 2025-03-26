@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leader Classic+</title>
+    <link rel="icon" href="src/img/icons/logo.svg">
+    <link rel="stylesheet" href="src/styles/fonts.css">
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/global.css">
+    <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/footer.css">
+    <link rel="stylesheet" href="src/styles/media.css">
+    <script src="src/js/burger.js" defer></script>
+    <script src="src/js/app.js" defer></script>
+    <script src="src/js/lang.js" defer></script>
+    <script src="src/js/scale.js" defer></script>
+    <script src="src/js/accordion.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <section class="top">
+                <div class="container">
+                    <div class="top__inner">
+                        <div class="top__nav">
+                            <div class="blur top__blur"></div>
+                            <div class="mobile-version-nav">
+                                <a class="burger-icon">
+                                    <svg width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2" y="3" width="21" height="2" rx="1" fill="white" />
+                                        <rect x="2" y="7" width="16" height="2" rx="1" fill="white" />
+                                        <rect x="2" y="11" width="21" height="2" rx="1" fill="white" />
+                                        <rect x="2" y="15" width="16" height="2" rx="1" fill="white" />
+                                    </svg>
+                                </a>
+                                <a class="logo" href="/">
+                                    <div class="logo__inner">
+                                        <div class="logo__icon">
+                                            <img class="logo__icon--top" src="src/img/logo-top.png" alt="">
+                                            <img class="logo__icon--bot" src="src/img/logo-bot.png" alt="">
+                                        </div>
+                                        <div class="logo__text">
+                                            <img src="src/img/logo-text.png" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="/" class="mobile__logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="61" height="30" viewBox="0 0 61 30"
+                                        fill="none">
+                                        <path
+                                            d="M29.5566 9.48047H30.834V18H29.5566V9.48047ZM30.1543 16.7754H33.1543V18H30.1543V16.7754Z"
+                                            fill="white" />
+                                        <path
+                                            d="M34.2746 9.48047H35.552V18H34.2746V9.48047ZM34.884 16.7637H37.9895V18H34.884V16.7637ZM34.884 13.1543H37.6965V14.3848H34.884V13.1543ZM34.884 9.48047H37.9895V10.7168H34.884V9.48047Z"
+                                            fill="white" />
+                                        <path
+                                            d="M40.6977 9.48047H41.7172L43.7152 18H42.4027L41.2074 11.8184L40.0121 18H38.6996L40.6977 9.48047ZM40.018 15.2051H42.4437V16.4062H40.018V15.2051Z"
+                                            fill="white" />
+                                        <path
+                                            d="M45.5504 16.7754H46.8746C47.0738 16.7754 47.2262 16.7168 47.3316 16.5996C47.441 16.4785 47.4957 16.3086 47.4957 16.0898V11.3906C47.4957 11.1719 47.441 11.0039 47.3316 10.8867C47.2262 10.7656 47.0738 10.7051 46.8746 10.7051H45.5504V9.48047H46.9332C47.3238 9.48047 47.6578 9.55273 47.9352 9.69727C48.2125 9.8418 48.4234 10.0527 48.568 10.3301C48.7125 10.6035 48.7848 10.9355 48.7848 11.3262V16.1543C48.7848 16.541 48.7105 16.873 48.5621 17.1504C48.4176 17.4277 48.2066 17.6387 47.9293 17.7832C47.652 17.9277 47.318 18 46.9273 18H45.5504V16.7754ZM44.7184 9.48047H45.9957V18H44.7184V9.48047Z"
+                                            fill="white" />
+                                        <path
+                                            d="M50.0809 9.48047H51.3582V18H50.0809V9.48047ZM50.6902 16.7637H53.7957V18H50.6902V16.7637ZM50.6902 13.1543H53.5027V14.3848H50.6902V13.1543ZM50.6902 9.48047H53.7957V10.7168H50.6902V9.48047Z"
+                                            fill="white" />
+                                        <path
+                                            d="M55.4961 13.1719H57.0488C57.2129 13.1719 57.3535 13.1426 57.4707 13.084C57.5879 13.0254 57.6758 12.9395 57.7344 12.8262C57.7969 12.7129 57.8281 12.5762 57.8281 12.416V11.5137C57.8281 11.3418 57.7969 11.1953 57.7344 11.0742C57.6758 10.9492 57.5879 10.8555 57.4707 10.793C57.3535 10.7305 57.2129 10.6992 57.0488 10.6992H55.4961V9.47461H56.9551C57.4121 9.47461 57.8027 9.55078 58.127 9.70312C58.4551 9.85156 58.7031 10.0723 58.8711 10.3652C59.043 10.6543 59.1289 11.002 59.1289 11.4082V12.4043C59.1289 12.8223 59.043 13.1816 58.8711 13.4824C58.7031 13.7793 58.4551 14.0059 58.127 14.1621C57.8027 14.3184 57.4121 14.3965 56.9551 14.3965H55.4961V13.1719ZM54.916 9.47461H56.1816V18H54.916V9.47461ZM56.8262 14.1328L58.0098 13.8633L59.3691 18H57.9863L56.8262 14.1328Z"
+                                            fill="white" />
+                                        <path
+                                            d="M31.5664 29.0879C31.1445 29.0879 30.7832 29.002 30.4824 28.8301C30.1816 28.6582 29.9512 28.4102 29.791 28.0859C29.6348 27.7617 29.5566 27.3711 29.5566 26.9141V22.5723C29.5566 22.1113 29.6348 21.7188 29.791 21.3945C29.9512 21.0703 30.1816 20.8223 30.4824 20.6504C30.7832 20.4785 31.1445 20.3926 31.5664 20.3926C31.9883 20.3926 32.3496 20.4785 32.6504 20.6504C32.9551 20.8223 33.1855 21.0723 33.3418 21.4004C33.498 21.7246 33.5762 22.1152 33.5762 22.5723V23.0938H32.2812V22.5723C32.2812 22.3809 32.2539 22.2188 32.1992 22.0859C32.1445 21.9492 32.0625 21.8457 31.9531 21.7754C31.8477 21.7051 31.7188 21.6699 31.5664 21.6699C31.418 21.6699 31.2891 21.7051 31.1797 21.7754C31.0742 21.8457 30.9922 21.9492 30.9336 22.0859C30.8789 22.2188 30.8516 22.3809 30.8516 22.5723V26.9141C30.8516 27.1016 30.8789 27.2637 30.9336 27.4004C30.9922 27.5332 31.0742 27.6348 31.1797 27.7051C31.2891 27.7754 31.418 27.8105 31.5664 27.8105C31.7188 27.8105 31.8477 27.7754 31.9531 27.7051C32.0625 27.6348 32.1445 27.5332 32.1992 27.4004C32.2539 27.2637 32.2812 27.0996 32.2812 26.9082V26.3867H33.5762V26.9082C33.5762 27.3652 33.498 27.7578 33.3418 28.0859C33.1855 28.4102 32.9551 28.6582 32.6504 28.8301C32.3496 29.002 31.9883 29.0879 31.5664 29.0879Z"
+                                            fill="white" />
+                                        <path
+                                            d="M34.4551 20.4805H35.7324V29H34.4551V20.4805ZM35.0527 27.7754H38.0527V29H35.0527V27.7754Z"
+                                            fill="white" />
+                                        <path
+                                            d="M40.5781 20.4805H41.5977L43.5957 29H42.2832L41.0879 22.8184L39.8926 29H38.5801L40.5781 20.4805ZM39.8984 26.2051H42.3242V27.4062H39.8984V26.2051Z"
+                                            fill="white" />
+                                        <path
+                                            d="M45.8457 29.0879C45.4004 29.0879 45.0195 29.0078 44.7031 28.8477C44.3906 28.6875 44.1523 28.4551 43.9883 28.1504C43.8242 27.8418 43.7422 27.4707 43.7422 27.0371V26.5977L45.0195 26.5918V27.0078C45.0195 27.2695 45.0898 27.4727 45.2305 27.6172C45.375 27.7617 45.5801 27.834 45.8457 27.834C46.0996 27.834 46.2949 27.7637 46.4316 27.623C46.5723 27.4785 46.6426 27.2754 46.6426 27.0137V26.2695C46.6426 26.0859 46.5938 25.9297 46.4961 25.8008C46.4023 25.6719 46.2832 25.5645 46.1387 25.4785C45.9941 25.3887 45.7949 25.2832 45.541 25.1621C45.5293 25.1582 45.5176 25.1543 45.5059 25.1504C45.4941 25.1426 45.4824 25.1367 45.4707 25.1328L45.3945 25.0977C45.0547 24.9336 44.7715 24.7695 44.5449 24.6055C44.3223 24.4414 44.1328 24.2188 43.9766 23.9375C43.8242 23.6562 43.748 23.3047 43.748 22.8828V22.4141C43.748 21.9883 43.8281 21.625 43.9883 21.3242C44.1523 21.0195 44.3906 20.7891 44.7031 20.6328C45.0156 20.4727 45.3926 20.3926 45.834 20.3926C46.2676 20.3926 46.6367 20.4727 46.9414 20.6328C47.2461 20.7891 47.4766 21.0215 47.6328 21.3301C47.793 21.6348 47.873 22.0039 47.873 22.4375V22.9004L46.5957 22.9121V22.4668C46.5957 22.2012 46.5293 21.998 46.3965 21.8574C46.2676 21.7129 46.0801 21.6406 45.834 21.6406C45.5723 21.6406 45.3711 21.707 45.2305 21.8398C45.0938 21.9727 45.0254 22.1602 45.0254 22.4023V22.9531C45.0254 23.1406 45.0723 23.3008 45.166 23.4336C45.2598 23.5664 45.375 23.6758 45.5117 23.7617C45.6523 23.8477 45.8457 23.9473 46.0918 24.0605C46.127 24.0762 46.1621 24.0938 46.1973 24.1133C46.2324 24.1289 46.2676 24.1465 46.3027 24.166C46.3184 24.1699 46.332 24.1758 46.3438 24.1836C46.3594 24.1914 46.373 24.1973 46.3848 24.2012C46.7168 24.3652 46.9844 24.5195 47.1875 24.6641C47.3906 24.8047 47.5625 25.0078 47.7031 25.2734C47.8477 25.5352 47.9199 25.875 47.9199 26.293V27.0371C47.9199 27.4707 47.8398 27.8418 47.6797 28.1504C47.5195 28.4551 47.2832 28.6875 46.9707 28.8477C46.6621 29.0078 46.2871 29.0879 45.8457 29.0879Z"
+                                            fill="white" />
+                                        <path
+                                            d="M50.791 29.0879C50.3457 29.0879 49.9648 29.0078 49.6484 28.8477C49.3359 28.6875 49.0977 28.4551 48.9336 28.1504C48.7695 27.8418 48.6875 27.4707 48.6875 27.0371V26.5977L49.9648 26.5918V27.0078C49.9648 27.2695 50.0352 27.4727 50.1758 27.6172C50.3203 27.7617 50.5254 27.834 50.791 27.834C51.0449 27.834 51.2402 27.7637 51.377 27.623C51.5176 27.4785 51.5879 27.2754 51.5879 27.0137V26.2695C51.5879 26.0859 51.5391 25.9297 51.4414 25.8008C51.3477 25.6719 51.2285 25.5645 51.084 25.4785C50.9395 25.3887 50.7402 25.2832 50.4863 25.1621C50.4746 25.1582 50.4629 25.1543 50.4512 25.1504C50.4395 25.1426 50.4277 25.1367 50.416 25.1328L50.3398 25.0977C50 24.9336 49.7168 24.7695 49.4902 24.6055C49.2676 24.4414 49.0781 24.2188 48.9219 23.9375C48.7695 23.6562 48.6934 23.3047 48.6934 22.8828V22.4141C48.6934 21.9883 48.7734 21.625 48.9336 21.3242C49.0977 21.0195 49.3359 20.7891 49.6484 20.6328C49.9609 20.4727 50.3379 20.3926 50.7793 20.3926C51.2129 20.3926 51.582 20.4727 51.8867 20.6328C52.1914 20.7891 52.4219 21.0215 52.5781 21.3301C52.7383 21.6348 52.8184 22.0039 52.8184 22.4375V22.9004L51.541 22.9121V22.4668C51.541 22.2012 51.4746 21.998 51.3418 21.8574C51.2129 21.7129 51.0254 21.6406 50.7793 21.6406C50.5176 21.6406 50.3164 21.707 50.1758 21.8398C50.0391 21.9727 49.9707 22.1602 49.9707 22.4023V22.9531C49.9707 23.1406 50.0176 23.3008 50.1113 23.4336C50.2051 23.5664 50.3203 23.6758 50.457 23.7617C50.5977 23.8477 50.791 23.9473 51.0371 24.0605C51.0723 24.0762 51.1074 24.0938 51.1426 24.1133C51.1777 24.1289 51.2129 24.1465 51.248 24.166C51.2637 24.1699 51.2773 24.1758 51.2891 24.1836C51.3047 24.1914 51.3184 24.1973 51.3301 24.2012C51.6621 24.3652 51.9297 24.5195 52.1328 24.6641C52.3359 24.8047 52.5078 25.0078 52.6484 25.2734C52.793 25.5352 52.8652 25.875 52.8652 26.293V27.0371C52.8652 27.4707 52.7852 27.8418 52.625 28.1504C52.4648 28.4551 52.2285 28.6875 51.916 28.8477C51.6074 29.0078 51.2324 29.0879 50.791 29.0879Z"
+                                            fill="white" />
+                                        <path d="M55.0508 29H53.7734V20.4805H55.0508V29Z" fill="white" />
+                                        <path
+                                            d="M58.1094 29.0879C57.6875 29.0879 57.3262 29.002 57.0254 28.8301C56.7246 28.6582 56.4941 28.4102 56.334 28.0859C56.1777 27.7617 56.0996 27.3711 56.0996 26.9141V22.5723C56.0996 22.1113 56.1777 21.7188 56.334 21.3945C56.4941 21.0703 56.7246 20.8223 57.0254 20.6504C57.3262 20.4785 57.6875 20.3926 58.1094 20.3926C58.5312 20.3926 58.8926 20.4785 59.1934 20.6504C59.498 20.8223 59.7285 21.0723 59.8848 21.4004C60.041 21.7246 60.1191 22.1152 60.1191 22.5723V23.0938H58.8242V22.5723C58.8242 22.3809 58.7969 22.2188 58.7422 22.0859C58.6875 21.9492 58.6055 21.8457 58.4961 21.7754C58.3906 21.7051 58.2617 21.6699 58.1094 21.6699C57.9609 21.6699 57.832 21.7051 57.7227 21.7754C57.6172 21.8457 57.5352 21.9492 57.4766 22.0859C57.4219 22.2188 57.3945 22.3809 57.3945 22.5723V26.9141C57.3945 27.1016 57.4219 27.2637 57.4766 27.4004C57.5352 27.5332 57.6172 27.6348 57.7227 27.7051C57.832 27.7754 57.9609 27.8105 58.1094 27.8105C58.2617 27.8105 58.3906 27.7754 58.4961 27.7051C58.6055 27.6348 58.6875 27.5332 58.7422 27.4004C58.7969 27.2637 58.8242 27.0996 58.8242 26.9082V26.3867H60.1191V26.9082C60.1191 27.3652 60.041 27.7578 59.8848 28.0859C59.7285 28.4102 59.498 28.6582 59.1934 28.8301C58.8926 29.002 58.5312 29.0879 58.1094 29.0879Z"
+                                            fill="white" />
+                                        <path
+                                            d="M5.40242 9H0L2.8601 10.9254L2.82038 23.4627L3.019 24.1791L3.41623 24.9851L3.93264 25.6119L10.7254 30V27.6716L10.6857 27.403L10.5268 27.0896L9.65285 25.8358L5.40242 23.1045V9Z"
+                                            fill="url(#paint0_linear_2238_24)" />
+                                        <path
+                                            d="M19.0674 25.5224L12.1554 30V10.8358L12.1952 10.2985L12.3143 9.85075L12.4732 9.53731L12.8307 9.1791L13.228 9H23L20.1796 11.0597V14.4627L17.5579 16.1194V11.9552H14.8964V24.8507L17.5181 23.0597V19.6567L20.1399 18V23.6418L19.981 24.1791L19.8221 24.5821L19.4646 25.0746L19.0674 25.5224Z"
+                                            fill="url(#paint1_linear_2238_24)" />
+                                        <path d="M10.8048 9H6.7133L8.18307 10.0299V21.2687L10.8048 23.1045V9Z"
+                                            fill="url(#paint2_linear_2238_24)" />
+                                        <path d="M11 9V23L8.41177 21.1594V10.004L7 9H11Z" fill="white" />
+                                        <path
+                                            d="M4 8V7.01124H7.26687L5.42638 2.1573C8.12036 2.97008 9.8354 3.36789 8.09509 5.4382C9.48314 6.5937 10.1129 6.46824 10.9479 4.76404C8.9185 4.10736 9.83022 2.64025 11.5 0C13.198 2.55276 14.0925 3.95891 12.0982 4.89888C12.8537 6.38768 13.4242 6.6733 14.9049 5.4382C14.5524 5.22184 14.1687 4.85393 14.0767 4.04494C13.9847 3.23595 16.061 2.45551 17.5736 2.1573L15.7331 7.01124H19V8H4Z"
+                                            fill="white" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_2238_24" x1="30.0596" y1="0" x2="30.0596"
+                                                y2="30" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#926C47" />
+                                                <stop offset="1" stop-color="#F8ECCD" />
+                                            </linearGradient>
+                                            <linearGradient id="paint1_linear_2238_24" x1="30.0596" y1="0" x2="30.0596"
+                                                y2="30" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#926C47" />
+                                                <stop offset="1" stop-color="#F8ECCD" />
+                                            </linearGradient>
+                                            <linearGradient id="paint2_linear_2238_24" x1="30.0596" y1="0" x2="30.0596"
+                                                y2="30" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#926C47" />
+                                                <stop offset="1" stop-color="#F8ECCD" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <nav class="nav">
+                                <ul class="nav__list">
+                                    <li class="bluring">
+                                        <div class="blur "></div>
+                                    </li>
+                                    <li class="esc">
+                                        <a class="esc__burger" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path d="M6 18L18 6M6 6L18 18" stroke="currentColor" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <div class="lang">
+                                            <img id="languageIcon" src="src/img/icons/languagemask.svg" alt="">
+                                            <span data-translate="currentLang">RU</span>
+                                            <a href="#" id="languageDropdown"><img src="src/img/icons/vectorlang.svg"
+                                                    alt=""></a>
+                                            <div id="languageList" class="language-list">
+                                                <a href="#" data-lang="RU">RU</a>
+                                                <a href="#" data-lang="ENG">ENG</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a class="nav__link nav__link-first" href="#questions"
+                                            data-translate="tariffs">Тарифы</a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a class="nav__link nav__link-second" href="#bonus"
+                                            data-translate="bonus">Бонус</a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a class="nav__link nav__link-third" href="#advantages"
+                                            data-translate="referal">Реферальная</a>
+                                    </li>
+                                    <li class="nav__item ">
+                                        <a class="nav__link nav__link-fourth" href="#contacts">
+                                            <span data-translate="contacts">Контакты</span>
+                                        </a>
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="111" height="19"
+                                            viewBox="0 0 111 19" fill="none">
+                                            <path d="M92.5332 18.26H110.533V0.26001H92.5332V18.26Z"
+                                                fill="url(#pattern0_2131_4)" />
+                                            <defs>
+                                                <pattern id="pattern0_2131_4" patternContentUnits="objectBoundingBox"
+                                                    width="1" height="1">
+                                                    <use xlink:href="#image0_2131_4" transform="scale(0.00625)" />
+                                                    <image id="image0_2131_4" width="160" height="160"
+                                                        preserveAspectRatio="none"
+                                                        xlink:href="data:image/png;base64,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" />
+                                                </pattern>
+                                            </defs>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="top__buttons">
+
+                                <a href="#" class="button top__button-login" data-translate="login">Войти</a>
+                                <a href="#" class="button-colored top__button-open" data-translate="check">Открыть
+                                    счёт</a>
+                            </div>
+
+                        </div>
+                        <div class="top__draw">
+                            <div class="top__info">
+                                <img class="top__gift" src="src/img/icons/gift-icon.png" alt="">
+
+                                <div class="top__text">
+                                    <h6 class="top__title" data-translate="top1">Станьте миллионером с Leader Classic
+                                    </h6>
+                                    <p class="top__p" data-translate="top2">Откройте счет, инвестируйте в фонды Leader
+                                        Classic и получите шанс выиграть один из 100 000 000 ₽</p>
+
+                                </div>
+                                <img src="src/img/icons/mobilegift.png" alt="" class="top__gift--mobile">
+                            </div>
+                            <div class="top__taimer">
+                                <div id="timer">
+                                    <span id="days">27</span> <span class="days" data-translate="timer1">д</span> :
+                                    <span id="hours">07</span> <span class="hours" data-translate="timer2">ч</span> :
+                                    <span id="minutes">40</span> <span class="minutes" data-translate="timer3">м</span>
+                                    :
+                                    <span id="seconds">49</span> <span class="seconds" data-translate="timer4">с</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="short">
+                <div class="short__iphone">
+                    <img src="src/img/icons/iphone.png" alt="">
+                </div>
+                <div class="blur short__blur"></div>
+                <div class="container">
+                    <div class="short__inner">
+                        <div class="short__raiting">
+                            <h1 class="short__title">
+                                <span data-translate="top">ТОП-5 акций</span><br>
+                                <span data-translate="med">с доходностью до 10-30% </span><br>
+                                <span data-translate="bot">уже в 2022 году</span>
+                            </h1>
+                            <ul class="short__list">
+                                <li class="short__item" data-translate="item1">
+                                    Открытие брокерского счета за 5 минут без визита в офис
+                                </li>
+                                <li class="short__item" data-translate="item2">
+                                    Доступ к ценным бумагам с любого устройства
+                                </li>
+                                <li class="short__item">
+                                    <span data-translate="item3">Поддержка в чате 24/7</span>
+                                    <img class="short__arrow" src="src/img/icons/header-arrow.svg" alt="">
+                                </li>
+                                <li class="arrow--mobile"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="69"
+                                        viewBox="0 0 16 69" fill="none">
+                                        <path
+                                            d="M14.2665 68.1634C14.5356 68.2255 14.8041 68.0577 14.8661 67.7886L15.8777 63.4037C15.9397 63.1347 15.7719 62.8662 15.5028 62.8041C15.2338 62.7421 14.9653 62.9099 14.9033 63.179L14.0041 67.0766L10.1065 66.1775C9.83741 66.1154 9.56897 66.2832 9.50689 66.5523C9.44482 66.8214 9.61263 67.0898 9.88171 67.1519L14.2665 68.1634ZM9.004 0.887811C1.90373 14.608 -0.806956 25.1126 0.25991 35.3505C1.3252 45.5733 6.15105 55.4572 13.955 67.9412L14.8029 67.4112C7.01176 54.9475 2.29466 45.2283 1.25452 35.2469C0.215962 25.2806 2.83737 14.9797 9.89212 1.34742L9.004 0.887811Z"
+                                            fill="url(#paint0_linear_113_409)" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_113_409" x1="14.0254" y1="69.5319"
+                                                x2="5.97667" y2="2.94051" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="white" />
+                                                <stop offset="1" stop-color="white" stop-opacity="0" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </li>
+                            </ul>
+                            <div class="short__buttons">
+                                <a href="" class="button-colored short__button-download"
+                                    data-translate="shortbut">Скачать ТОП-5
+                                    акций </a>
+                                <div class="check--mobile">
+                                    <img src="src/img/checklistmobile.png" alt="">
+                                </div>
+                                <div class="short__check-img">
+                                    <img src="src/img/icons/checklist.png" alt="">
+                                </div>
+                                <a href="#" class="button short__button-open" data-translate="shortbut1">Открыть
+                                    счёт</a>
+                            </div>
+                            <div class="short__users">
+                                <img class="users--mobile" src="src/img/usersmobile.png" alt="">
+                                <img class="users" src="src/img/usersphoto.png" alt="" data-translate="tr1">
+                                <p class="short__now" data-translate="tr21">Сейчас инвестируют 100 000+ пользователей
+                                </p>
+                            </div>
+                            <div class="bottom__iphone">
+                                <img src="src/img/icons/iphone.png" alt="">
+                            </div>
+                        </div>
+                        <div class="short__catalog">
+                            <h2 class="short__subtitle"><span data-translate="tr2">Ваши деньги</span><br> <span
+                                    data-translate="tr3">способны на большее</span></h2>
+                            <p class="short__question"><span data-translate="tr4">Сколько бы вы заработали,
+                                    инвестируй</span> <span>100 000 ₽</span> <br><span data-translate="tr5">год
+                                    назад?</span></p>
+                            <div class="short__content">
+                                <div class="short__tesla short__icon-company">
+                                    <div class="short__company-img"><img class="company-img--desctop"
+                                            src="src/img/stock/tesla.png" alt="">
+                                        <img src="src/img/stock/teslamobile.png" alt="" class="company-img--mobile">
+                                    </div>
+                                    <span class="short__percent">+83.97%</span>
+                                    <span class="short__cost">+72.000₽</span>
+                                </div>
+                                <div class="short__amazon short__icon-company">
+                                    <div class="short__company-img"><img class="company-img--desctop"
+                                            src="src/img/stock/amazon.png" alt="">
+                                        <img src="src/img/stock/amazonmobile.png" alt="" class="company-img--mobile">
+                                    </div>
+                                    <span class="short__percent">+4.11%
+                                    </span>
+                                    <span class="short__cost">+72.000₽</span>
+                                </div>
+                                <div class="short__apple short__icon-company">
+                                    <div class="short__company-img"><img class="company-img--desctop"
+                                            src="src/img/stock/apple.png" alt="">
+                                        <img src="src/img/stock/applemobile.png" alt="" class="company-img--mobile">
+                                    </div>
+                                    <span class="short__percent">+26.36%</span>
+                                    <span class="short__cost">+72.000₽</span>
+                                </div>
+                                <div class="short__yandex short__icon-company">
+                                    <div class="short__company-img"><img class="company-img--desctop"
+                                            src="src/img/stock/yandex.png" alt="">
+                                        <img src="src/img/stock/yandexmobile.png" alt="" class="company-img--mobile">
+                                    </div>
+                                    <span class="short__percent">+17.19%</span>
+                                    <span class="short__cost">+72.000₽</span>
+                                </div>
+                                <div class="short__facebook short__icon-company">
+                                    <div class="short__company-img"><img class="company-img--desctop"
+                                            src="src/img/stock/facebook.png" alt="">
+                                        <img src="src/img/stock/facebookmobile.png" alt="" class="company-img--mobile">
+                                    </div>
+                                    <span class="short__percent">+31.32%</span>
+                                    <span class="short__cost">+72.000₽</span>
+                                </div>
+                                <div class="short__microsoft short__icon-company">
+                                    <div class="short__company-img"><img class="company-img--desctop"
+                                            src="src/img/stock/microsoft.png" alt="">
+                                    </div>
+                                    <span class="short__percent">+38.99%</span>
+                                    <span class="short__cost">+72.000₽</span>
+                                </div>
+                                <div class="short__shadow--mobilea"></div>
+                                <div class="short__shadow--mobileb"></div>
+                            </div>
+                            <p class="short__text" data-translate="tr6">И еще более 10 000 других ценных бумаг доступно
+                                в каталоге</p>
+                            <a href="#" class="button-colored short__button-catalog" data-translate="tr7">Получить
+                                каталог</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main class="main">
+            <section class="tulls">
+                <div class="container">
+                    <div class="tulls__inner">
+                        <h2 class="tulls__title" data-translate="tr8">Большой выбор инструментов</h2>
+                        <div class="tulls__img">
+                            <img src="src/img/tools.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="steps">
+                <div class="container">
+                    <div class="steps__inner">
+                        <h2 class="steps__title" data-translate="tr9">Инвестиции доступные каждому</h2>
+                        <p class="steps__text" data-translate="tr10">Простой сервис с подсказками и поддержкой 24/7 на
+                            каждом этапе
+                        <p>
+                        <div class="steps__grid">
+                            <div class="steps__first">
+                                <span class="steps__step" data-translate="tr11">Шаг 1</span>
+                                <span class="steps__number">1</span>
+                                <h3 class="steps__sub" data-translate="tr12">Заполнить регистрационную анкету</h3>
+                                <p class="steps__description" data-translate="tr13">Нужно указать основные данные о
+                                    себе: имя, номер телефона, e-mail и пароль для входа.</p>
+                            </div>
+                            <div class="steps__second">
+                                <span class="steps__step" data-translate="tr14">Шаг 2</span>
+                                <span class="steps__number">2</span>
+                                <h3 class="steps__sub"><span data-translate="tr15">Внести деньги</span><br><span
+                                        data-translate="tr16">на счет</span></h3>
+                                <p class="steps__description" data-translate="tr17">Вы можете использовать несколько
+                                    платежных систем для пополнения депозита, включая систему MidexPay и кошелек
+                                    Bitcoin.</p>
+                            </div>
+                            <div class="steps__third">
+                                <span class="steps__step" data-translate="tr18">Шаг 3</span>
+                                <span class="steps__number free">3</span>
+                                <h3 class="steps__sub" data-translate="tr19">Приступить
+                                    к онлайн-трейдингу</h3>
+                                <p class="steps__description" data-translate="tr20">Сразу после пополнения депозита
+                                    торговля через веб-терминал или мобильную платформу будет доступна.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bonus" id="bonus">
+                <div class="container">
+                    <div class="bonus__inner">
+                        <div class="blur bonus__blur-right"></div>
+                        <div class="blur bonus__blur-left"></div>
+                        <div class="bonus__gift-left">
+                            <img src="src/img/bonus-gifts-right.png" alt="">
+                        </div>
+                        <div class="bonus__gift-right">
+                            <img src="src/img/bonus-gifts-left1.png" alt="">
+                        </div>
+                        <div class="bonus__info">
+                            <div class="bonus__content">
+                                <span data-translate="tr22">БОНУС</span>
+                            </div>
+                            <h3 class="bonus__title"><span data-translate="tr23">Каждый достоин</span><br> <span
+                                    data-translate="tr24">второго шанса</span></h3>
+                            <p class="bonus__text"><span data-translate="tr25">Купите свои первые акции без риска, мы
+                                    вернем</span> <br>
+                                <span data-translate="tr26">вам 100$ на счет в случае проигрыша</span>
+                            </p>
+                            <div class="bonus__buttons">
+                                <a href="#" class="button-colored bonus__button-gold" data-translate="tr27">Получить
+                                    бонус</a>
+                                <a href="#" class="button bonus__button-black" data-translate="tr28">Открыть
+                                    демо-счёт</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="advantages" id="advantages">
+                <div class="container">
+                    <div class="advantages__inner">
+                        <h2 class="advantages__title" data-translate="tr29">100 000+ клиентов уже инвестируют с нами
+                        </h2>
+                        <div class="advatages__grid">
+                            <div class="advatages__block">
+                                <img src="src/img/icons/world.svg" alt="">
+                                <h4 class="advatages__sub" data-translate="tr30">Представительство компании в Европе
+                                </h4>
+                                <p class="advatages__text" data-translate="tr31">В разных странах мира компания
+                                    открывает собсвенные представительства.</p>
+                                <div class="advantages__learnmore">
+
+                                    <a href="#" data-translate="tr32">Подробнее
+                                    </a>
+                                    <img class="arrow" src="src/img/icons/arrow-right.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="advatages__block">
+                                <img src="src/img/icons/card.svg" alt="">
+                                <h4 class="advatages__sub" data-translate="tr33">Мгновенный ввод и вывод средств</h4>
+                                <p class="advatages__text" data-translate="tr34">0% комиссия с депозита</p>
+                                <div class="advantages__learnmore">
+
+                                    <a href="#" data-translate="tr32">Подробнее
+                                    </a>
+                                    <img class="arrow" src="src/img/icons/arrow-right.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="advatages__block">
+                                <img src="src/img/icons/credit.svg" alt="">
+                                <h4 class="advatages__sub" data-translate="tr35">Кредитное плечо до 1:1000</h4>
+                                <p class="advatages__text"></p>
+                                <div class="advantages__learnmore">
+
+                                    <a href="#" data-translate="tr32">Подробнее
+                                    </a>
+                                    <img class="arrow" src="src/img/icons/arrow-right.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="advatages__block">
+                                <img src="src/img/icons/watch.svg" alt="">
+                                <h4 class="advatages__sub" data-translate="tr36">Время выполнения заказа - 30 мс</h4>
+                                <p class="advatages__text" data-translate="tr37">Средний показатель по отрасли - 500 мс
+                                </p>
+                                <div class="advantages__learnmore">
+
+                                    <a href="#" data-translate="tr32">Подробнее
+                                    </a>
+                                    <img class="arrow" src="src/img/icons/arrow-right.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="advatages__block">
+                                <img src="src/img/icons/tulls.png" alt="">
+                                <h4 class="advatages__sub" data-translate="tr38">250 торговых инструментов</h4>
+                                <p class="advatages__text" data-translate="tr39">Валютные пары, акции, металлы, индексы,
+                                    облигации</p>
+                                <div class="advantages__learnmore">
+
+                                    <a href="#" data-translate="tr32">Подробнее
+                                    </a>
+                                    <img class="arrow" src="src/img/icons/arrow-right.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="advatages__block">
+                                <img src="src/img/icons/mon.svg" alt="">
+                                <h4 class="advatages__sub" data-translate="tr40">Счета в евро, рублях, долларах США</h4>
+                                <p class="advatages__text" data-translate="tr41">Пополните свой счет и сэкономьте на
+                                    сборах за конвертацию</p>
+                                <div class="advantages__learnmore">
+
+                                    <a href="#" data-translate="tr32">Подробнее
+                                    </a>
+                                    <img class="arrow" src="src/img/icons/arrow-right.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="advatages__block">
+                                <img src="src/img/icons/gift.png" alt="">
+                                <h4 class="advatages__sub" data-translate="tr42">15% бонус на первый депозит</h4>
+                                <p class="advatages__text" data-translate="tr43">Может использоваться в торговле и во
+                                    время просадки</p>
+                                <div class="advantages__learnmore">
+
+                                    <a href="#" data-translate="tr32">Подробнее
+                                    </a>
+                                    <img class="arrow" src="src/img/icons/arrow-right.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="advatages__block">
+                                <img src="src/img/icons/platform.png" alt="">
+                                <h4 class="advatages__sub" data-translate="tr44">Инновационная торговая платформа МТ5
+                                </h4>
+                                <p class="advatages__text" data-translate="tr45">Доступно на IOS и Android</p>
+                                <div class="advantages__learnmore">
+
+                                    <a href="#" data-translate="tr32">Подробнее
+                                    </a>
+                                    <img class="arrow" src="src/img/icons/arrow-right.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="portfolio">
+                <div class="container">
+                    <div class="portfolio__inner">
+                        <div class="portfolio__content">
+                            <div class="portfolio__scale">
+                                <div class="portfolio__figure">
+                                    <svg width="691" height="346" viewBox="0 0 691 346" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                            <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                <stop offset="0%" style="stop-color:#405548;stop-opacity:1" />
+                                                <stop offset="33%" style="stop-color:#6ADB83;stop-opacity:1" />
+                                                <stop offset="33%" style="stop-color:#303030;stop-opacity:1" />
+                                                <stop offset="100%" style="stop-color:#303030;stop-opacity:1" />
+                                            </linearGradient>
+                                            <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                <stop offset="0%" style="stop-color:#405548;stop-opacity:1" />
+                                                <stop offset="66%" style="stop-color:#6ADB83;stop-opacity:1" />
+                                                <stop offset="66%" style="stop-color:#303030;stop-opacity:1" />
+                                                <stop offset="100%" style="stop-color:#303030;stop-opacity:1" />
+                                            </linearGradient>
+                                        </defs>
+                                        <path id="scalePath"
+                                            d="M677.481 345.175C684.722 345.175 690.618 339.3 690.343 332.064C687.047 245.327 651.147 162.826 589.544 101.223C524.844 36.5229 437.092 0.174812 345.592 0.174805C254.092 0.174798 166.34 36.5229 101.64 101.223C40.0369 162.826 4.13649 245.327 0.840871 332.064C0.565932 339.3 6.46209 345.175 13.7033 345.175V345.175C20.9446 345.175 26.7866 339.3 27.0841 332.065C30.3651 252.285 63.4973 176.45 120.182 119.765C179.965 59.983 261.047 26.3976 345.592 26.3976C430.137 26.3976 511.219 59.983 571.001 119.765C627.687 176.45 660.819 252.286 664.1 332.065C664.397 339.3 670.239 345.175 677.481 345.175V345.175Z"
+                                            fill="#303030" />
+                                        <circle id="roundEdge" cx="0" cy="0" r="14" fill="#6ADB83"
+                                            style="display: none;" />
+                                    </svg>
+                                    <div class="portfolio__info">
+                                        <span class="portfolio__profit" data-translate="tr46">Доходность</span>
+                                        <div class="portfolio__active">
+                                            <span data-translate="tr47">до</span><span id="profitValue">5%</span>
+                                        </div>
+                                        <span class="portfolio__risk" data-translate="tr48">Низкий риск</span>
+                                        <img src="src/img/bar.svg" alt="">
+                                        <div class="portfolio__but">
+                                            <div class="portfolio__but-first">
+                                                <input class="portfolio__checkbox" type="checkbox"
+                                                    name="portfolio_option1" id="checkbox1">
+                                                <span data-translate="tr49">Управляю деньгами сам</span>
+                                            </div>
+                                            <div class="portfolio__but-second">
+                                                <input class="portfolio__checkbox" type="checkbox"
+                                                    name="portfolio_option2" id="checkbox2">
+                                                <span data-translate="tr50">Доверяю управление</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio__text">
+                                <h2 class="portfolio__title" data-translate="tr51">Подберите индивидуальный
+                                    инвестиционный портфель</h2>
+                                <p class="portfolio__p" data-translate="tr52">Покупайте российские и иностранные акции,
+                                    облигации, валюту и
+                                    другие продукты в простом и удобном мобильном приложении для iOS и Android</p>
+                                <a href="#" class="button-colored portfolio__button-gold" data-translate="tr53">Получить
+                                    бонус</a>
+                            </div>
+                        </div>
+                        <div class=" portfolio__flex">
+                            <div class="portfolio__item1">
+                                <span class="portfolio__number">60 000</span>
+                                <span class="portfolio__inscription" data-translate="tr54">Активных инвесторов</span>
+                            </div>
+                            <div class="portfolio__item2">
+                                <span class="portfolio__number">150+</span>
+                                <span class="portfolio__inscription" data-translate="tr55">Торговых инструментов</span>
+                            </div>
+                            <div class="portfolio__item3">
+                                <span class="portfolio__number">183 000 USD</span>
+                                <span class="portfolio__inscription"><span data-translate="tr56">Финансовый
+                                        результат</span><br> <span data-translate="tr57">одного из инвесторов
+                                    </span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="devices">
+                <div class="container">
+                    <div class="devices__inner">
+                        <div class="blur devices__blur"></div>
+                        <div class="devices__content">
+                            <div class="devices__text">
+                                <h3 class="devices__title" data-translate="tr58">Инвестируйте с телефона</h3>
+                                <p class="devices__p" data-translate="tr59">Покупайте российские и иностранные акции,
+                                    облигации, валюту и другие продукты в простом и удобном мобильном приложении для iOS
+                                    и Android.</p>
+                                <div class="devices__buttons">
+                                    <a href="#" class="devices__button"> <img src="src/img/icons/ios.svg" alt=""> <span
+                                            data-translate="tr60">Скачать для IOS</span></a>
+                                    <a href="#" class="devices__button"> <img src="src/img/icons/android.svg" alt="">
+                                        <span data-translate="tr61">Скачать для Android</span></a>
+                                </div>
+                            </div>
+                            <div class="devices__img">
+                                <img src="src/img/all.png" alt="">
+                            </div>
+                        </div>
+                        <div class="devices__apps">
+                            <img src="src/img/CleanShot.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="questions" id="questions">
+                <div class="container">
+                    <div class="questions__inner">
+                        <div class="questions__text">
+                            <h3 class="questions__title" data-translate="tr62">Мне только спросить</h3>
+                            <p class="questions__p" data-translate="tr63">Собрали в подсказках ответы на популярные
+                                вопросы
+                                об инвестициях и сервисе</p>
+                            <a href="" class="button-colored questions__button" data-translate="tr64">Получить
+                                консультацию</a>
+                        </div>
+                        <div class="questions__action">
+                            <div class="accordion-item">
+                                <a href="#" class="questions__click"> <span class="quest">?</span><span
+                                        class="questions__mid" data-translate="tr65">Есть ли плата за
+                                        обслуживание?</span><span class="questions__circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="15"
+                                            viewBox="0 0 23 15" fill="none">
+                                            <line x1="1.41421" y1="1.58579" x2="12.3277" y2="12.4993" stroke="#272932"
+                                                stroke-width="4" />
+                                            <line x1="9.64855" y1="12.723" x2="21.6486" y2="1.72296" stroke="#272932"
+                                                stroke-width="4" />
+                                        </svg>
+                                    </span>
+                                </a>
+                                <div class="accordion-content">
+                                    Обслуживание счета бесплатное при условии минимального остатка в 10 000 ₽. Если баланс ниже, взимается комиссия 150 ₽ в месяц. Для премиальных клиентов плата за обслуживание отсутствует независимо от суммы на счете.
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <a href="#" class="questions__click"> <span class="quest">?</span><span
+                                        class="questions__mid" data-translate="tr66">Как вывести деньги со
+                                        счёта?</span><span class="questions__circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="15"
+                                            viewBox="0 0 23 15" fill="none">
+                                            <line x1="1.41421" y1="1.58579" x2="12.3277" y2="12.4993" stroke="#272932"
+                                                stroke-width="4" />
+                                            <line x1="9.64855" y1="12.723" x2="21.6486" y2="1.72296" stroke="#272932"
+                                                stroke-width="4" />
+                                        </svg>
+                                    </span>
+                                </a>
+                                <div class="accordion-content">
+                                    Вы можете перевести средства на карту любого банка (комиссия 1%, но не менее 50 ₽), через систему быстрых платежей (до 100 000 ₽ без комиссии) или снять наличные в наших партнерских банкоматах (первые 3 операции в месяц бесплатно).
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <a href="#" class="questions__click"> <span class="quest">?</span><span
+                                        class="questions__mid" data-translate="tr67">Какие налоги?</span><span
+                                        class="questions__circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="15"
+                                            viewBox="0 0 23 15" fill="none">
+                                            <line x1="1.41421" y1="1.58579" x2="12.3277" y2="12.4993" stroke="#272932"
+                                                stroke-width="4" />
+                                            <line x1="9.64855" y1="12.723" x2="21.6486" y2="1.72296" stroke="#272932"
+                                                stroke-width="4" />
+                                        </svg>
+                                    </span>
+                                </a>
+                                <div class="accordion-content">
+                                    Доход от вкладов облагается НДФЛ 13%, если ставка превышает ключевую ставку ЦБ +5%. Прибыль от инвестиций (акции, облигации) также облагается налогом, но есть льготы при долгосрочном владении (более 3 лет).
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <a href="#" class="questions__click"> <span class="quest">?</span><span
+                                        class="questions__mid" data-translate="tr68">Где хранятся деньги?</span><span
+                                        class="questions__circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="15"
+                                            viewBox="0 0 23 15" fill="none">
+                                            <line x1="1.41421" y1="1.58579" x2="12.3277" y2="12.4993" stroke="#272932"
+                                                stroke-width="4" />
+                                            <line x1="9.64855" y1="12.723" x2="21.6486" y2="1.72296" stroke="#272932"
+                                                stroke-width="4" />
+                                        </svg>
+                                    </span>
+                                </a>
+                                <div class="accordion-content">
+                                    Средства клиентов размещаются в банках-партнерах с лицензией ЦБ РФ. Все вклады застрахованы АСВ на сумму до 1,4 млн ₽. Инвестиционные активы хранятся в национальном депозитарии.
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <a href="#" class="questions__click"> <span class="quest">?</span><span
+                                        class="questions__mid" data-translate="tr69">Как открыть счёт?</span><span
+                                        class="questions__circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="15"
+                                            viewBox="0 0 23 15" fill="none">
+                                            <line x1="1.41421" y1="1.58579" x2="12.3277" y2="12.4993" stroke="#272932"
+                                                stroke-width="4" />
+                                            <line x1="9.64855" y1="12.723" x2="21.6486" y2="1.72296" stroke="#272932"
+                                                stroke-width="4" />
+                                        </svg>
+                                    </span>
+                                </a>
+                                <div class="accordion-content">
+                                    Достаточно иметь паспорт и ИНН. Можно оформить онлайн за 5 минут через мобильное приложение или лично в отделении. После верификации счет будет доступен для операций.
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <a href="#" class="questions__click"> <span class="quest">?</span><span
+                                        class="questions__mid" data-translate="tr70">Как пополнить счёт?</span><span
+                                        class="questions__circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="15"
+                                            viewBox="0 0 23 15" fill="none">
+                                            <line x1="1.41421" y1="1.58579" x2="12.3277" y2="12.4993" stroke="#272932"
+                                                stroke-width="4" />
+                                            <line x1="9.64855" y1="12.723" x2="21.6486" y2="1.72296" stroke="#272932"
+                                                stroke-width="4" />
+                                        </svg>
+                                    </span>
+                                </a>
+                                <div class="accordion-content">
+                                    <ul>
+                                        <li>Пополнение доступно:</li>
+                                        <li>Банковской картой (без комиссии)</li>
+                                        <li>Переводом с другого счета (по реквизитам)</li>
+                                        <li>Наличными в кассах партнеров (до 15 000 ₽ в день без комиссии)</li>
+                                        <li>Через Qiwi/СБП (лимит 600 000 ₽ в месяц)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <a href="#" class="questions__click"> <span class="quest">?</span><span
+                                        class="questions__mid" data-translate="tr71">Что купить?</span><span
+                                        class="questions__circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="15"
+                                            viewBox="0 0 23 15" fill="none">
+                                            <line x1="1.41421" y1="1.58579" x2="12.3277" y2="12.4993" stroke="#272932"
+                                                stroke-width="4" />
+                                            <line x1="9.64855" y1="12.723" x2="21.6486" y2="1.72296" stroke="#272932"
+                                                stroke-width="4" />
+                                        </svg>
+                                    </span>
+                                </a>
+                                <div class="accordion-content">
+                                    <ul>
+                                        <li>Рекомендуем диверсифицированный портфель:</li>
+                                        <li>Облигации федерального займа (низкий риск)</li>
+                                        <li>ETF на индекс S&P 500 (средний риск)</li>
+                                        <li>Акции голубых фишек (высокая ликвидность)</li>
+                                        <li>Драгметаллы (защита от инфляции)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="application">
+                <div class="container">
+                    <div class="application__inner">
+                        <h2 class="application__title" data-translate="tr72">Оставьте заявку на открытие счёта</h2>
+                        <div class="application__steps">
+                            <div class="application__step1">
+                                <div class="application__content">
+                                    <div class="application__icon">
+                                        <img src="src/img/icons/letter.svg" alt="">
+                                    </div>
+                                    <div class="application__line">
+                                        <svg width="279" height="11" viewBox="0 0 279 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="4.5" cy="5.5" r="3.5" stroke="white" stroke-width="2" />
+                                            <path stroke-dasharray="5,5" stroke="white" stroke-width="1"
+                                                d="M9 5.5h259" />
+                                            <path fill="white"
+                                                d="M269.447 2.252a1.5 1.5 0 0 1 2.35-1.24l5.35 3.09a1.5 1.5 0 0 1 0 2.48l-5.35 3.09a1.5 1.5 0 0 1-2.35-1.24V2.252Z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="application__text">
+                                    <h4 class="application__sub"><span data-translate="tr73">Заполните
+                                            заявку</span><br><span data-translate="tr74">онлайн</span></h4>
+                                    <p class="application__p" data-translate="tr75">Необходимо: имя, номер телефона,
+                                        e-mail и пароль
+                                        для входа.</p>
+                                </div>
+                            </div>
+                            <div class="application__step2">
+                                <div class="application__content">
+                                    <div class="application__icon-a">
+                                        <img src="src/img/icons/cardlast.svg" alt="">
+                                    </div>
+                                    <div class="application__line">
+                                        <svg width="279" height="11" viewBox="0 0 279 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="4.5" cy="5.5" r="3.5" stroke="white" stroke-width="2" />
+                                            <path stroke-dasharray="5,5" stroke="white" stroke-width="1"
+                                                d="M9 5.5h259" />
+                                            <path fill="white"
+                                                d="M269.447 2.252a1.5 1.5 0 0 1 2.35-1.24l5.35 3.09a1.5 1.5 0 0 1 0 2.48l-5.35 3.09a1.5 1.5 0 0 1-2.35-1.24V2.252Z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="application__text">
+                                    <h4 class="application__sub"><span data-translate="tr76">Откроем счет</span><br>
+                                        <span data-translate="tr77">за 5 минут</span>
+                                    </h4>
+                                    <p class="application__p" data-translate="tr78">Вы можете использовать несколько
+                                        платежных систем для
+                                        пополнения депозита, включая систему MidexPay и кошелек Bitcoin.</p>
+                                </div>
+                            </div>
+                            <div class="application__step3">
+                                <div class="application__content">
+                                    <div class="application__icon-b">
+                                        <img src="src/img/icons/moneylast.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="application__text">
+                                    <h4 class="application__sub"><span data-translate="tr79">Пополните счёт</span><br>
+                                        <span data-translate="tr80">и начните инвестировать</span>
+                                    </h4>
+                                    <p class="application__p" data-translate="tr81">Сразу после пополнения депозита
+                                        будет доступна торговля
+                                        через веб-терминал или мобильную платформу.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="application__info">
+                            <input class="application__name" type="text" placeholder="Ваше имя:"
+                                data-translate="placeholderName">
+                            <input class="application__tel" type="text" placeholder="+7 --- --- -- --">
+                            <input class="application__mail" type="email" placeholder="Email:">
+                            <a href="#" class="button-colored application__button" data-translate="tr82">Оставить
+                                заявку</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blur application__blur"></div>
+            </section>
+        </main>
+        <footer class="footer" id="contacts">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__logo">
+                        <a class="logo" href="/">
+                            <div class="logo__inner">
+                                <div class="logo__icon">
+                                    <img class="logo__icon--top" src="src/img/logo-top.png" alt="">
+                                    <img class="logo__icon--bot" src="src/img/logo-bot.png" alt="">
+                                </div>
+                                <div class="logo__text">
+                                    <img src="src/img/logo-text.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                        <div class="footer__socials">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="36" viewBox="0 0 18 20"
+                                    fill="none">
+                                    <circle cx="9" cy="10" r="8.5" stroke="black" stroke-width="1" fill="none" />
+                                    <g clip-path="url(#clip0_8_2)">
+                                        <path
+                                            d="M9 7.91641C8.57616 7.91656 8.16189 8.03889 7.80956 8.26793C7.45723 8.49698 7.18267 8.82244 7.02058 9.20318C6.8585 9.58392 6.81617 10.0028 6.89896 10.407C6.98174 10.8111 7.18592 11.1823 7.48567 11.4736C7.78542 11.7649 8.16729 11.9633 8.583 12.0436C8.9987 12.1239 9.42957 12.0826 9.82113 11.9249C10.2127 11.7672 10.5473 11.5001 10.7828 11.1575C11.0183 10.8149 11.1439 10.4121 11.1439 10C11.1435 9.44739 10.9175 8.91754 10.5155 8.52686C10.1135 8.13618 9.5684 7.91661 9 7.91641ZM14.0107 6.31484C13.9016 6.04603 13.7368 5.80188 13.5266 5.59754C13.3165 5.3932 13.0653 5.23302 12.7888 5.12695C11.9451 4.80313 9.93616 4.87578 9 4.87578C8.06384 4.87578 6.05692 4.80039 5.21076 5.12695C4.93427 5.23302 4.68314 5.3932 4.47296 5.59754C4.26278 5.80188 4.09803 6.04603 3.98893 6.31484C3.65625 7.13516 3.73058 9.09023 3.73058 9.99961C3.73058 10.909 3.65625 12.8617 3.99054 13.6848C4.09964 13.9536 4.26439 14.1977 4.47457 14.4021C4.68475 14.6064 4.93587 14.7666 5.21237 14.8727C6.05612 15.1965 8.06504 15.1238 9.00161 15.1238C9.93817 15.1238 11.9443 15.1992 12.7904 14.8727C13.0669 14.7666 13.3181 14.6064 13.5282 14.4021C13.7384 14.1977 13.9032 13.9536 14.0123 13.6848C14.3478 12.8645 14.2706 10.9094 14.2706 10C14.2706 9.09062 14.3478 7.13828 14.0123 6.31523L14.0107 6.31484ZM9 13.2031C8.34838 13.2031 7.7114 13.0153 7.16959 12.6633C6.62779 12.3113 6.20551 11.8111 5.95615 11.2258C5.70678 10.6405 5.64154 9.99645 5.76866 9.3751C5.89579 8.75376 6.20957 8.18301 6.67034 7.73505C7.1311 7.28708 7.71815 6.98202 8.35725 6.85842C8.99635 6.73483 9.65879 6.79826 10.2608 7.0407C10.8628 7.28314 11.3774 7.69369 11.7394 8.22044C12.1014 8.74719 12.2946 9.36648 12.2946 10C12.2952 10.4208 12.2103 10.8375 12.0449 11.2264C11.8795 11.6152 11.6369 11.9686 11.3308 12.2661C11.0248 12.5636 10.6614 12.7996 10.2614 12.9603C9.86147 13.1211 9.43281 13.2036 9 13.2031ZM12.4304 7.41016C12.2783 7.41023 12.1296 7.36645 12.0031 7.28434C11.8766 7.20224 11.7779 7.0855 11.7197 6.94889C11.6614 6.81228 11.6461 6.66194 11.6758 6.51688C11.7054 6.37182 11.7786 6.23857 11.8861 6.13397C11.9937 6.02936 12.1307 5.95812 12.2799 5.92924C12.4291 5.90036 12.5837 5.91514 12.7242 5.97172C12.8648 6.0283 12.9849 6.12412 13.0694 6.24708C13.1539 6.37004 13.1991 6.51461 13.1991 6.6625C13.1995 6.76071 13.18 6.85803 13.1416 6.94889C13.1033 7.03974 13.0468 7.12234 12.9756 7.19195C12.9043 7.26156 12.8196 7.3168 12.7263 7.35452C12.6331 7.39223 12.5331 7.41167 12.4321 7.41172L12.4304 7.41016Z"
+                                            fill="black" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_8_2">
+                                            <circle cx="9" cy="10" r="8.5" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 20 20"
+                                    fill="none">
+                                    <path
+                                        d="M18.3333 9.99999C18.3333 5.39999 14.6 1.66666 9.99999 1.66666C5.39999 1.66666 1.66666 5.39999 1.66666 9.99999C1.66666 14.0333 4.53332 17.3917 8.33332 18.1667V12.5H6.66666V9.99999H8.33332V7.91666C8.33332 6.30832 9.64166 4.99999 11.25 4.99999H13.3333V7.49999H11.6667C11.2083 7.49999 10.8333 7.87499 10.8333 8.33332V9.99999H13.3333V12.5H10.8333V18.2917C15.0417 17.875 18.3333 14.325 18.3333 9.99999Z"
+                                        fill="black" />
+                                </svg>
+                            </a>
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 20 20"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_6_7)">
+                                        <path
+                                            d="M9.99999 0.399994C4.69799 0.399994 0.399994 4.69799 0.399994 9.99999C0.399994 15.302 4.69799 19.6 9.99999 19.6C15.302 19.6 19.6 15.302 19.6 9.99999C19.6 4.69799 15.302 0.399994 9.99999 0.399994ZM13.692 11.231C13.692 11.231 14.541 12.069 14.75 12.458C14.756 12.4667 14.7597 12.4733 14.761 12.478C14.8457 12.62 14.8667 12.7323 14.824 12.815C14.754 12.953 14.514 13.021 14.432 13.027H12.932C12.828 13.027 12.61 13 12.346 12.818C12.143 12.676 11.943 12.443 11.748 12.216C11.457 11.878 11.205 11.586 10.951 11.586C10.9187 11.5859 10.8866 11.5909 10.856 11.601C10.664 11.663 10.418 11.937 10.418 12.667C10.418 12.895 10.238 13.026 10.111 13.026H9.42399C9.18999 13.026 7.97099 12.944 6.89099 11.805C5.56899 10.41 4.37899 7.61199 4.36899 7.58599C4.29399 7.40499 4.44899 7.30799 4.61799 7.30799H6.13299C6.33499 7.30799 6.40099 7.43099 6.44699 7.53999C6.50099 7.66699 6.69899 8.17199 7.02399 8.73999C7.55099 9.66599 7.87399 10.042 8.13299 10.042C8.18156 10.0414 8.22926 10.0291 8.27199 10.006C8.60999 9.81799 8.54699 8.61299 8.53199 8.36299C8.53199 8.31599 8.53099 7.82399 8.35799 7.58799C8.23399 7.41699 8.02299 7.35199 7.89499 7.32799C7.9468 7.25651 8.01506 7.19854 8.09399 7.15899C8.32599 7.04299 8.74399 7.02599 9.15899 7.02599H9.38999C9.83999 7.03199 9.95599 7.06099 10.119 7.10199C10.449 7.18099 10.456 7.39399 10.427 8.12299C10.418 8.32999 10.409 8.56399 10.409 8.83999L10.406 9.03199C10.396 9.40299 10.384 9.82399 10.646 9.99699C10.6798 10.0193 10.7195 10.0308 10.76 10.03C10.851 10.03 11.125 10.03 11.867 8.75699C12.095 8.34681 12.2938 7.9211 12.462 7.48299C12.477 7.45699 12.521 7.37699 12.573 7.34599C12.6118 7.32756 12.6541 7.31768 12.697 7.31699H14.478C14.672 7.31699 14.805 7.34599 14.83 7.42099C14.874 7.53999 14.822 7.90299 14.009 9.00399L13.646 9.48299C12.909 10.449 12.909 10.498 13.692 11.231Z"
+                                            fill="black" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_6_7">
+                                            <rect width="20" height="20" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 20 20"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_6_9)">
+                                        <path
+                                            d="M11.603 9.83299L9.35699 8.78499C9.16099 8.69399 8.99999 8.79599 8.99999 9.01299V10.987C8.99999 11.204 9.16099 11.306 9.35699 11.215L11.602 10.167C11.799 10.075 11.799 9.92499 11.603 9.83299ZM9.99999 0.399994C4.69799 0.399994 0.399994 4.69799 0.399994 9.99999C0.399994 15.302 4.69799 19.6 9.99999 19.6C15.302 19.6 19.6 15.302 19.6 9.99999C19.6 4.69799 15.302 0.399994 9.99999 0.399994ZM9.99999 13.9C5.08599 13.9 4.99999 13.457 4.99999 9.99999C4.99999 6.54299 5.08599 6.09999 9.99999 6.09999C14.914 6.09999 15 6.54299 15 9.99999C15 13.457 14.914 13.9 9.99999 13.9Z"
+                                            fill="black" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_6_9">
+                                            <rect width="20" height="20" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </div>
+                        <a href="#"><span class="footer__poli" data-translate="tr84">Политика передачи данных</span></a>
+                    </div>
+                    <div class="footer__number">
+                        <span class="footer__call" data-translate="tr85">Звонок по России бесплатный</span>
+                        <span class="footer__tel">8 (495) 212-16-71</span>
+                        <a href="#" class="button-colored footer__button"><span data-translate="tr86">Оставить
+                                заявку</span></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
