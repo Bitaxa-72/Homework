@@ -1,0 +1,92 @@
+:root{
+    --main-text-color: #ffffff;
+
+}
+html{
+    scroll-padding:40vh;
+}
+body{
+    font-family: 'Gotham Pro';
+    color: var(--main-text-color);
+    background-color: #0E0E12;
+    font-weight: 400;
+    font-size: 18px;
+}
+.wrapper{
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    flex-grow: 1;
+}
+.container{
+    max-width: 1625px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+/* ================ logo ================ */
+
+.logo__inner {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo__icon {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+}
+
+.logo__icon--top {
+    width: 34px;
+    height: 17px;
+}
+
+.logo__icon--bot {
+    width: 52px;
+    height: 45px;
+}
+
+.logo__text {
+    margin-top: 6px;
+}
+
+/* ================ buttons ================ */
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 1px solid #FF8924;
+    flex-shrink: 0;
+}
+.button-colored {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 20px;
+    color: #000;
+    font-weight: 700;
+    background: linear-gradient(87deg, #DC6B30 17.99%, #E4864F 49.64%, #FFBE82 72.7%, #E49031 93.02%);
+    box-shadow: 0px 3px 49px -3px rgba(226, 128, 72, 0.76), 0px -4px 0px 0px #8F4119 inset;
+}
+
+/* ================ blur ================ */
+
+.blur {
+    position: absolute;
+    width: 413px;
+    height: 418px;
+    border-radius: 100%;
+    background: linear-gradient(180deg, #98C269 0%, #9EDFB6 100%);
+    filter: blur(250px);
+}
